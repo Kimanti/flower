@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!------1. 아래의 코드를 HEAD 부분에 복사해 넣으세요 ------------------------------> 
+
+<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT"> 
+<!-- 
+expireDate = new Date 
+expireDate.setMonth(expireDate.getMonth()+6) 
+hitCt = eval(cookieVal("pageHit")) 
+hitCt++ 
+document.cookie = "pageHit="+hitCt+";expires=" + expireDate.toGMTString() 
+
+function cookieVal(cookieName) { 
+thisCookie = document.cookie.split("; ") 
+for (i=0; i<thisCookie.length; i++) { 
+if (cookieName == thisCookie[i].split("=")[0]) { 
+return thisCookie[i].split("=")[1] 
+} 
+} 
+return 0 
+} 
+
+// --> 
+</SCRIPT> 
+
+<!------------------------- 여기까지 ----------------------------------> 
+	<meta charset=UTF-8">
+ <style>
+ 	*{
+	 	padding:0;
+	 	margin:0;
+	 }
+	 #title{
+	 	float:left;
+		width:300px;
+		margin-top:20px;
+		margin-left:20px;
+		margin-right:20px;
+	 }
+	 body{
+	 	font-family: SangSangFlowerRoad;
+	 	background-color: #eeeeee
+	 }
+	 #page{
+		width:1200px;
+		margin:0 auto;
+	}
+	header{
+		width:1200px;
+		height:100px;
+	}
+	nav{
+		width:1200px;
+		height:70px;
+		margin-top:10px;
+	}
+	aside{
+	float:left;
+	margin-left:20px;
+	margin-top:10px;
+	}
+ 	section{
+ 	 float:right;
+ 	 margin:15px;
+ 	 line-height: 140%
+ 	}
+
+	footer{
+		width:1200px;
+		border-top: solid 1px #cccccc;
+		margin-top:20px;
+	}
+	.clear{
+		clear:both;
+	}
+	 .menu{
+	
+		width:150px;
+		height:70px;
+		text-align:center;
+		list-style-type:none;
+		color:hotpink;
+		display:inline;
+	}
+	.underline{
+		border-bottom:dashed 3px gray;
+	}
+	#image2{
+		width:350px;
+	}
+	@font-face{
+		font-family: 'SangSangFlowerRoad';
+		src:url(SangSangFlowerRoad.tff) format('truetype');
+	}
+ </style>
+
+<title>꽃처럼 아름다워</title>
+</head>
+<div id="page">
+<body>
+	
+	<header>
+		<a href="index.html"> <img src= "logo image.png" id="title"> </a>
+	</header>
+
+	<div class='clear'></div>
+
+
+
+
+	<nav>
+		<ul id="menu">
+ 	 	<li class="menu"><a href="webtoon.html"><img src="menu1.png"></a>&nbsp;&nbsp;&nbsp;</li>
+ 	 	<li class="menu"><a href="character.html"><img src="menu2.png"></a></li>
+ 	 	<li class="menu"><a href="story.html"><img src="menu3.png"></a></li>
+ 	 </ul>
+
+	</nav>
+
+	<div class='clear'></div>
+
+
+
+
+
+	<section>
+	
+ 	<a href="webtoon.html" target="_blank"><img id = "image2" src="watchwebtoon.png"></a><br><br>
+
+	<div class="underline"></div>
+
+ 	 <br><a href="character.html" target="_blank"><img id = "image2" src="watchcharacter.png"></a>
+
+ 	  <div class='clear'></div>
+
+	</section>
+
+
+ 	
+
+
+
+
+
+	<aside>
+
+	<img src="main image.png" width="800px">
+
+	</aside>
+
+	<div class='clear'></div>
+
+
+
+
+
+	<footer>
+		<img id = "info" src="page info.png">
+		<SCRIPT LANGUAGE=JAVASCRIPT TYPE="TEXT/JAVASCRIPT"> 
+<!-- 
+document.write("당신은 " +  hitCt  + " 번째 방문자입니다") 
+//--> 
+</SCRIPT> 
+	</footer>
+
+	<div class='clear'></div>
+</body>
+</html>
